@@ -1,0 +1,3 @@
+[submodule "vendor/BeastHttp"]
+	path = vendor/BeastHttp
+	url = https://github.com/0xdead4ead/BeastHttp
