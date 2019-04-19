@@ -83,7 +83,7 @@ int main()
         HttpSession::recv(std::move(asioSocket), router, onError);
     };
 
-    auto const address = boost::asio::ip::make_address("127.0.0.1");
+    auto const address = boost::asio::ip::make_address("0.0.0.0");
     auto const port = static_cast<unsigned short>(3388);
 
     // Start accepting

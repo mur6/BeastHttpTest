@@ -11,8 +11,8 @@ find_package(OpenSSL COMPONENTS SSL Crypto)
 set(exec_name ${proj_name})
 add_executable(${exec_name} main.cpp)
 set(BeastHttp_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/vendor/BeastHttp/include)
-include_directories(${BeastHttp_INCLUDE_DIR}) # for clion
+# include_directories(${BeastHttp_INCLUDE_DIR}) # for clion
 message("BeastHttp_INCLUDE_DIR: ${BeastHttp_INCLUDE_DIR}")
-#target_include_directories(${exec_name} PRIVATE
-#        ${Boost_INCLUDE_DIR} ${BeastHttp_INCLUDE_DIR})
+target_include_directories(${exec_name} PRIVATE
+        ${Boost_INCLUDE_DIR} ${BeastHttp_INCLUDE_DIR})
 target_link_libraries(${exec_name} PUBLIC ${Boost_LIBRARIES})
