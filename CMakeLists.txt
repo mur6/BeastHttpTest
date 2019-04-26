@@ -9,7 +9,7 @@ find_package(Boost 1.67 COMPONENTS system thread regex)
 find_package(OpenSSL COMPONENTS SSL Crypto)
 
 set(exec_name ${proj_name})
-add_executable(${exec_name} main.cpp)
+add_executable(${exec_name} main.cpp src/response.cpp)
 set(BeastHttp_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/vendor/BeastHttp/include)
 # include_directories(${BeastHttp_INCLUDE_DIR}) # for clion
 message("BeastHttp_INCLUDE_DIR: ${BeastHttp_INCLUDE_DIR}")
