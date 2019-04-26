@@ -1,3 +1,5 @@
+#pragma once
+
 #include <reactor/listener.hxx>
 #include <reactor/session.hxx>
 
